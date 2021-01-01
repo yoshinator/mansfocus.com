@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://157.245.3.221",
+    "apiUrl": "https://mansfocus.com",
     "contentApiKey": "82fef573f955f1006b89e5e85f"
   },
   "production": {
-    "apiUrl": "https://157.245.3.221",
+    "apiUrl": "https://mansfocus.com",
     "contentApiKey": "82fef573f955f1006b89e5e85f"
   }
 }
