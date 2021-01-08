@@ -22,12 +22,22 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node
     const twitterUrl = site.twitter ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}` : null
     const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
+    const gtag =
+                    `window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-186442507-1');
+                    `
+
+
 
     return (
         <>
             <Helmet>
                 <html lang={site.lang} />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FKD4DP8GY"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186442507-1"></script>
+                <script>{gtag}</script>
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
             </Helmet>
