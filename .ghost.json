@@ -1,7 +1,7 @@
 {
   "development": {
-    "apiUrl": "http://localhost:2368",
-    "contentApiKey": "6bbb96764038568eac05f6fdc2"
+    "apiUrl": "https://mansfocus.gq",
+    "contentApiKey": "5d180925f6ba9a539bcc3807df"
   },
   "production": {
     "apiUrl": "https://mansfocus.gq",
