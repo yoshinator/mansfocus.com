@@ -3,7 +3,7 @@ module.exports = {
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `Man's Focus`, // This allows an alternative site title for meta data for pages.
+    siteTitleMeta: `Wealth Health and Knowledge`, // This allows an alternative site title for meta data for pages.
     siteDescriptionMeta: `Define your self and focuns on what's important`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
