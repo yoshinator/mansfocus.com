@@ -287,12 +287,22 @@ textarea {
     overflow: auto;
 }
 table {
-    border-spacing: 0;
+    border-spacing: 1px;
     border-collapse: collapse;
+    border: 1px solid #5B7A81;
 }
 td,
 th {
-    padding: 0;
+    padding: .25em;
+    border: 1px solid #5B7A81;
+}
+th {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #5B7A81;
+}
+td {
+    font-family: monospace;
 }
 
 /* Defaults
