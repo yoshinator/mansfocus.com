@@ -1201,3 +1201,36 @@ h6 {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+/* Contact Form */
+.form-container, .form-container > *{
+    padding: .5em;
+    background-color: var(--color-base);
+    color: var(--color-border);
+    text-align: center;
+    font-weight: var(--font-heavy);
+    font-size: 1.25em;
+    border-radius: var(--radius);
+    font-family: var(--font-serif);
+}
+
+.form-container input {
+    color: var(--color-base);
+    padding: .5em;
+    text-align: right;
+    margin-right: auto;
+    width: 80%;
+}
+
+.form-container button {
+    background-color: var(--color-base);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: .5em;
+}
+
+.form-container button:hover, .form-container button:active {
+    background-color: #fdffb6;
+    color: var(--color-base);
+    transition: all .25s ease-out;
+}
