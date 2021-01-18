@@ -157,6 +157,9 @@ table {
 img {
     max-width: 100%;
 }
+caption, figcaption {
+    text-align: center;
+}
 html {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -289,20 +292,20 @@ textarea {
 table {
     border-spacing: 1px;
     border-collapse: collapse;
-    border: 1px solid #5B7A81;
+    border: 1px solid var(--color-secondary);
 }
 td,
 th {
     padding: .25em;
-    border: 1px solid #5B7A81;
+    border: 1px solid var(--color-secondary);
 }
 th {
     color: #fff;
     border: 1px solid #fff;
-    background-color: #5B7A81;
+    background-color: var(--color-secondary);
 }
 td {
-    font-family: monospace;
+    font-family: var(--font-mono);
 }
 
 /* Defaults
@@ -1170,3 +1173,31 @@ h6 {
   .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
   }
+
+  .light-box {
+    width: 100%;
+    visibility: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+      /* A bit of padding around image */
+    padding: 1em;
+
+  /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .light-box span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
