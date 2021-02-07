@@ -65,7 +65,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    {/* <Form /> */}
+                    <Form />
                 </div>
             </Layout>
         </>
