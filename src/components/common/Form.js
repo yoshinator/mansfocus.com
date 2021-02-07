@@ -1,5 +1,5 @@
 import React from "react";
-// import * as typeformEmbed from "@typeform/embed";
+import * as typeformEmbed from "@typeform/embed";
 
 class Form extends React.Component {
     constructor(props) {
