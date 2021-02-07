@@ -1,7 +1,7 @@
 import React from "react";
 import * as typeformEmbed from "@typeform/embed";
 
-export class Form extends React.Component {
+class Form extends React.Component {
     constructor(props) {
         super(props);
         this.el = null;
@@ -29,3 +29,4 @@ export class Form extends React.Component {
     }
 }
 
+export default Form;

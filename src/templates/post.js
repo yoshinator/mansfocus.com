@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
-import { Form } from '../components/common/Form'
+import Form from '../components/common/Form'
 import { set } from 'lodash'
 
 /**
