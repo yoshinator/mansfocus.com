@@ -1,32 +1,24 @@
-import React from "react";
-// import * as typeformEmbed from "@typeform/embed";
+import React, { useRef, useEffect } from "react";
+import * as typeformEmbed from "@typeform/embed";
 
-class Form extends React.Component {
-    constructor(props) {
-        super(props);
-        this.el = null;
-    }
-    componentDidMount() {
-        if (this.el) {
-            // typeformEmbed.makeWidget(
-            //     this.el,
-            //     "https://tu6s6xuakuw.typeform.com/to/wGd96IFk",
-            //     {
-            //         hideFooter: true,
-            //         hideHeaders: true,
-            //         opacity: 0,
-            //     }
-            // );
-        }
-    }
-    render() {
-        return (
-            <div
-                // ref={(el) => (this.el = el)}
-                style={{ width: "100%", height: "600px" }}
-            ></div>
+const MyTypeform = () => {
+    const typeformRef = useRef(null);
+
+    useEffect(() => {
+        typeformEmbed.makeWidget(
+            typeformRef.current,
+            "https://tu6s6xuakuw.typeform.com/to/wGd96IFk",
+            {
+                hideFooter: true,
+                hideHeaders: true,
+                opacity: 50,
+            }
         );
-    }
-}
+    }, [typeformRef]);
+
+    return (
+        <div ref={typeformRef} style={{ height: "500px", width: "100%" }}></div>
+    );
+};
 
 export default Form;
