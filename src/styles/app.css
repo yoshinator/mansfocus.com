@@ -1203,7 +1203,7 @@ h6 {
 }
 
 /* Contact Form */
-.form-container, .form-container > *{
+/* .form-container, .form-container > *{
     padding: .5em;
     background-color: var(--color-base);
     color: var(--color-border);
@@ -1233,4 +1233,4 @@ h6 {
     background-color: #fdffb6;
     color: var(--color-base);
     transition: all .25s ease-out;
-}
+} */

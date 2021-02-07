@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
-import { Contact } from '../components/common/Contact'
+import { Form } from '../components/common/Form'
 import { set } from 'lodash'
 
 /**
@@ -65,7 +65,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    <Contact />
+                    <Form />
                 </div>
             </Layout>
         </>
